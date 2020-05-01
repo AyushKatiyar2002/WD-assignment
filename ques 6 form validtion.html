@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>event</title>
+<script>
+function validate()
+{
+var username=document.getElementById("name").value ;
+var regx=/gmail/ ;
+if(regx.test(username))
+{
+alert("Valid username");
+}
+else
+{
+alert("Invalid username");
+}
+}
+</script>
+</head>
+<body>
+<form action="hello.html" method="post" >
+<p>Enter User NAME :</p><br>
+<input id="name" type="text"  placeholder="username" /><br>
+<button onclick="validate()" type="button">Submit </button>
+</form>
+</body>
+</html>
